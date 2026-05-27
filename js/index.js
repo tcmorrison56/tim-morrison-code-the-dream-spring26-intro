@@ -62,7 +62,7 @@ function messageHandler(event) {
     entry.remove();
     // Hide messages section if all messages are removed
     if (!document.querySelector(".message-list-item")) {
-      messageSection.style = "display: none;";
+      messageSection.style.display = "none";
     }
   });
   // append remove button
@@ -70,7 +70,7 @@ function messageHandler(event) {
   // append new message to messages secion
   messageList.appendChild(newMessage);
   // Display messages section
-  messageSection.style = "display: block;";
+  messageSection.style.display = "block";
 
   messageForm.reset();
 }
