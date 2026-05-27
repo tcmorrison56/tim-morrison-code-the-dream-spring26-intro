@@ -33,16 +33,18 @@ skills.forEach((skill) => {
 
 const messageForm = document.getElementsByName("leave_message")[0];
 
-function messageHandler() {
+function messageHandler(event) {
   event.preventDefault();
   // Save message content
   const messageName = event.target.usersName.value;
   const messageEmail = event.target.usersEmail.value;
   const messageContent = event.target.usersMessage.value;
 
+  console.log(messageName, messageEmail, messageContent);
+
   // Select messages and list
   const messageSection = document.getElementById("messages");
-  const messageList = document.querySelector(".messages-list");
+  const messageList = messageSection.querySelector(".messages-list");
 
   // New message HTML
   const newMessage = document.createElement("li");
@@ -52,6 +54,7 @@ function messageHandler() {
 
   // Message removal button
   const removeButton = document.createElement("button");
+  removeButton.type = "button";
   removeButton.classList.add("btn-remove-message");
   removeButton.innerText = "remove";
   removeButton.addEventListener("click", (e) => {
