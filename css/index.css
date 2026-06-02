@@ -218,8 +218,15 @@ header {
   top: 0.5rem;
   right: 1rem;
   width: 5rem;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   color: var(--heading-text-color);
   background-color: var(--main-background-color);
-  border: none;
+  border: 1px solid var(--heading-text-color);
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.btn-remove-message:hover {
+  background-color: var(--heading-text-color);
+  color: var(--main-background-color);
 }

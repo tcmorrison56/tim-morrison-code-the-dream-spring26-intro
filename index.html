@@ -160,24 +160,27 @@
       <div class="section-container section-message-form">
         <h2 class="message-form-header">Leave a Message!</h2>
         <form name="leave_message" class="message-form">
-          <label class="form-label">Name</label>
+          <label for="usersName" class="form-label">Name</label>
           <input
+            id="usersName"
             type="text"
             name="usersName"
             placeholder="name"
             class="form-input"
             required
           /><br />
-          <label class="form-label">Email</label>
+          <label for="usersEmail" class="form-label">Email</label>
           <input
+            id="usersEmail"
             type="email"
             name="usersEmail"
             placeholder="email"
             class="form-input"
             required
           /><br />
-          <label class="form-label">Message</label>
+          <label for="usersMessage" class="form-label">Message</label>
           <textarea
+            id="usersMessage"
             name="usersMessage"
             placeholder="message"
             class="form-input form-input-message"
