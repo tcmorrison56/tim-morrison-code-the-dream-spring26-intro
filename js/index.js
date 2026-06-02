@@ -84,12 +84,12 @@ projectList.classList.add("project-list");
 
 fetch("https://api.github.com/users/tcmorrison56/repos")
   .then((response) => {
-    const githubData = response.json();
-    return githubData;
+    const repositories = response.json();
+    return repositories;
   })
-  .then((githubData) => {
-    console.log(githubData);
-    githubData.forEach((repo) => {
+  .then((repositories) => {
+    console.log(repositories);
+    repositories.forEach((repo) => {
       const project = document.createElement("li");
       project.classList.add("project-list-item");
       project.innerHTML = `<a href="${repo.html_url}">${repo.name}</a>`;
