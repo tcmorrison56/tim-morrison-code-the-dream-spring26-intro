@@ -28,6 +28,7 @@
           <li class="nav-item"><a href="#skills">Skills</a></li>
           <li class="nav-item"><a href="#projects">Projects</a></li>
           <li class="nav-item"><a href="#connect">Connect</a></li>
+          <li class="nav-item"><a href="#message">Leave a Message</a></li>
         </ul>
       </nav>
     </header>
@@ -153,6 +154,47 @@
             ></a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="message" class="section">
+      <div class="section-container section-message-form">
+        <h2 class="message-form-header">Leave a Message!</h2>
+        <form name="leave_message" class="message-form">
+          <label for="usersName" class="form-label">Name</label>
+          <input
+            id="usersName"
+            type="text"
+            name="usersName"
+            placeholder="name"
+            class="form-input"
+            required
+          /><br />
+          <label for="usersEmail" class="form-label">Email</label>
+          <input
+            id="usersEmail"
+            type="email"
+            name="usersEmail"
+            placeholder="email"
+            class="form-input"
+            required
+          /><br />
+          <label for="usersMessage" class="form-label">Message</label>
+          <textarea
+            id="usersMessage"
+            name="usersMessage"
+            placeholder="message"
+            class="form-input form-input-message"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" class="btn btn-form-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section id="messages">
+      <div class="section-container">
+        <h2 class="messages-heading">Messages</h2>
+        <ul class="messages-list"></ul>
       </div>
     </section>
 

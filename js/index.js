@@ -30,3 +30,49 @@ skills.forEach((skill) => {
   li.textContent = skill;
   skillList.appendChild(li);
 });
+
+const messageForm = document.getElementsByName("leave_message")[0];
+
+function messageHandler(event) {
+  event.preventDefault();
+  // Save message content
+  const messageName = event.target.usersName.value;
+  const messageEmail = event.target.usersEmail.value;
+  const messageContent = event.target.usersMessage.value;
+
+  console.log(messageName, messageEmail, messageContent);
+
+  // Select messages and list
+  const messageSection = document.getElementById("messages");
+  const messageList = messageSection.querySelector(".messages-list");
+
+  // New message HTML
+  const newMessage = document.createElement("li");
+  newMessage.classList.add("message-list-item");
+  newMessage.innerHTML = `<a href="mailto:${messageEmail}" class="newUserName">${messageName}</a>
+                          <span class="newMessageContent">${messageContent}</span>`;
+
+  // Message removal button
+  const removeButton = document.createElement("button");
+  removeButton.type = "button";
+  removeButton.classList.add("btn-remove-message");
+  removeButton.innerText = "remove";
+  removeButton.addEventListener("click", (e) => {
+    const entry = e.target.parentNode;
+    entry.remove();
+    // Hide messages section if all messages are removed
+    if (!document.querySelector(".message-list-item")) {
+      messageSection.style.display = "none";
+    }
+  });
+  // append remove button
+  newMessage.appendChild(removeButton);
+  // append new message to messages secion
+  messageList.appendChild(newMessage);
+  // Display messages section
+  messageSection.style.display = "block";
+
+  messageForm.reset();
+}
+
+messageForm.addEventListener("submit", messageHandler);
