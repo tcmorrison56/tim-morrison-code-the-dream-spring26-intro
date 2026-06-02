@@ -122,6 +122,11 @@ header {
   font-size: 1.25rem;
 }
 
+.project-list {
+  display: flex;
+  gap: 4rem;
+}
+
 #connect {
   text-align: right;
 }
