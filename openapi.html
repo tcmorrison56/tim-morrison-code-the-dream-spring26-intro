@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tim Morrison Open API Page</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Tim Morrison" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/openapi.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea3f47c379.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="api_header">
+      <h1 class="timo-api-header"><a href="index.html">TiMo API</a></h1>
+      <nav class="navigation">
+        <ul>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="section-container section-api">
+        <h2 class="api-section-header">Show Your Weather Data</h2>
+        <div class="forecast-selector">
+          <button class="api-btn week-forecast-btn">Weekly</button>
+          <button class="api-btn current-forecast-btn">Current</button>
+        </div>
+        <div class="forecast-display">
+          <div class="forecast-container weekly-forecast">
+            <h3 class="forecast-header">Weekly Forecast</h3>
+            <div class="weekly-forecast-data">
+              <div class="weekly-forecast-label">
+                <p class="high-temp">High:</p>
+                <p class="low-temp">Low:</p>
+              </div>
+            </div>
+          </div>
+          <div class="forecast-container current-forecast">
+            <h3 class="forecast-header">Current Weather</h3>
+            <div class="current-forecast-data">
+              <div class="current-forecast-item">
+                <h4 class="current-temp-header">Temperature</h4>
+                <p class="current-temp current-weather-item"></p>
+              </div>
+              <div class="current-forecast-item">
+                <h4 class="current-apparent-temp-header">Feels Like</h4>
+                <p class="current-apparent-temp current-weather-item"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/openapi.js"></script>
+  </body>
+</html>

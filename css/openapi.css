@@ -1,0 +1,90 @@
+:root {
+  --main-background-color: #d8effd;
+  --main-text-color: #341f28;
+  --heading-text-color: #71334c;
+  --secondary-text-color: #d8effd;
+  --link-text-color: #71334c;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+.api_header {
+  position: relative;
+}
+
+.section-api {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.api-section-header {
+  font-size: 2.5rem;
+  color: var(--heading-text-color);
+  font-weight: 700;
+}
+
+.forecast-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.api-btn {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main-text-color);
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.api-btn:hover,
+.api-btn-pressed {
+  background-color: var(--main-text-color);
+  color: var(--main-background-color);
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-header {
+  margin: 1.5rem 0 1rem;
+}
+
+.weekly-forecast {
+  display: none;
+}
+
+.current-forecast {
+  display: none;
+}
+.weekly-forecast-data {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.current-forecast-data {
+  display: flex;
+  gap: 4rem;
+}
+
+.current-forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-weather-item {
+  font-size: 3rem;
+  font-weight: 400;
+}
