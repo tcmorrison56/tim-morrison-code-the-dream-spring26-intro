@@ -6,6 +6,29 @@ const footer = document.querySelector("footer");
 const skillsSection = document.getElementById("skills");
 const skillList = document.querySelector(".skill-list");
 
+footer.innerHTML = `<section id='connect' class='section'>
+      <div class='section-container section-container-connect'>
+        <h2 class='section-heading-connect'>Connect</h2>
+        <ul class='section-connect-list'>
+          <li class='connect-item'>
+            <a href='mailto:tcmorrison56@gmail.com''
+              ><i class="fa-solid fa-envelope fa-2xl"></i>
+            </a>
+          </li>
+          <li class='connect-item'>
+            <a href='https://github.com/tcmorrison56'
+              ><i class='fa-brands fa-github fa-2xl'></i
+            ></a>
+          </li>
+          <li class='connect-item'>
+            <a href='https://www.linkedin.com/in/timothy-morrison-a890aa140/'
+              ><i class='fa-brands fa-square-linkedin fa-2xl'></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>`;
+
 const today = new Date();
 const thisYear = today.getFullYear();
 
