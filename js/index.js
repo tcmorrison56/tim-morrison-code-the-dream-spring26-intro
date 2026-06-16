@@ -11,7 +11,7 @@ footer.innerHTML = `<section id='connect' class='section'>
         <h2 class='section-heading-connect'>Connect</h2>
         <ul class='section-connect-list'>
           <li class='connect-item'>
-            <a href='mailto:tcmorrison56@gmail.com''
+            <a href='mailto:tcmorrison56@gmail.com'
               ><i class="fa-solid fa-envelope fa-2xl"></i>
             </a>
           </li>
